@@ -4,20 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tramoji</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div id="start-screen">
+    <div class="lang-info">🌐 TR / PT</div>
+
     <h1>Tramoji</h1>
+
+    <div class="intro-box">
+      <p>
+        <span class="tr">📍 3 emojiyi incele ve hangi tarihi olayı temsil ettiğini seç.</span><br>
+        <span class="pt">📍 Observe os 3 emojis e escolha o evento histórico correspondente.</span>
+      </p>
+    </div>
 
     <div class="nickname-box">
       <label for="nickname">Takma Ad / Apelido:</label>
       <input id="nickname" maxlength="20" placeholder="En fazla 20 karakter / Máx. 20 caracteres" />
-    </div>
-
-    <div class="intro-box">
-      <p><span class="tr">📍 3 emojiyi incele ve hangi tarihi olayı temsil ettiğini seç.</span></p>
     </div>
 
     <button onclick="startGame()">Oyna / Jogar</button>
@@ -25,11 +29,9 @@
 
   <div id="quiz-screen" class="hidden">
     <div class="question" id="question"></div>
-    <div class="choices-grid" id="choices"></div>
+    <div class="choices-column" id="choices"></div>
     <div class="result" id="result"></div>
   </div>
-
-  <div id="combo-message" class="hidden"></div>
 
   <div id="end-screen" class="hidden">
     <h2>Oyun Bitti! / Fim do Jogo!</h2>
@@ -40,9 +42,6 @@
     </div>
     <button onclick="resetToStart()">Tekrar Oyna / Jogar Novamente</button>
   </div>
-
-  <audio id="correctSound" src="https://cdn.pixabay.com/audio/2021/08/04/audio_19bfe4dfab.mp3"></audio>
-  <audio id="wrongSound" src="https://cdn.pixabay.com/audio/2022/03/15/audio_4b5cb2ccf3.mp3"></audio>
 
   <script src="script.js"></script>
 </body>
