@@ -40,7 +40,7 @@ const questions = [
       ]
     },
     {
-      emoji: "🚢🧊🎻",
+      emoji: "🚢🎻",
       answer: "Titanik Kazası / Acidente do Titanic",
       options: [
         "Titanik Kazası / Acidente do Titanic",
@@ -60,7 +60,7 @@ const questions = [
       ]
     },
     {
-      emoji: "🏙️✈️✈️",
+      emoji: "🏙️✈️",
       answer: "İkiz Kuleler Saldırısı / Ataques às Torres Gêmeas",
       options: [
         "İkiz Kuleler Saldırısı / Ataques às Torres Gêmeas",
