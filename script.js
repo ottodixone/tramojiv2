@@ -1,20 +1,18 @@
 let current = 0;
 let score = 0;
 let playerName = "";
-let stats = [];
 
 const questions = [
-  {
-    emoji: "🌕👨‍🚀🚀",
-    answer: "Apollo 11 Görevi / Missão Apollo 11",
-    options: ["Apollo 11 Görevi / Missão Apollo 11", "Titanik / Titanic", "Covid-19 / Pandemia", "Berlin Duvarı / Muro de Berlim"]
-  },
-  {
-    emoji: "🧱🔨🎉",
-    answer: "Berlin Duvarı’nın Yıkılışı / Queda do Muro de Berlim",
-    options: ["Berlin Duvarı’nın Yıkılışı / Queda do Muro de Berlim", "Apollo 11", "Çernobil", "Covid"]
-  }
-  // Devamını sen ekleyebilirsin
+  { emoji: "🌕👨‍🚀🚀", answer: "Apollo 11 Görevi / Missão Apollo 11", options: ["Apollo 11 Görevi / Missão Apollo 11", "Titanik / Titanic", "Covid-19 / Pandemia", "Berlin Duvarı / Muro de Berlim"] },
+  { emoji: "🧱🔨🎉", answer: "Berlin Duvarı’nın Yıkılışı / Queda do Muro de Berlim", options: ["Berlin Duvarı’nın Yıkılışı / Queda do Muro de Berlim", "Apollo 11", "Çernobil", "Covid"] },
+  { emoji: "🏭☢️💥", answer: "Çernobil Felaketi / Desastre de Chernobyl", options: ["Çernobil Felaketi / Desastre de Chernobyl", "Titanik", "Covid", "Ay’a İniş"] },
+  { emoji: "🏯🌊☢️", answer: "2011 Japonya Depremi / Terremoto no Japão", options: ["2011 Japonya Depremi / Terremoto no Japão", "Çernobil", "İkiz Kuleler", "Pandemi"] },
+  { emoji: "😷🔒💉", answer: "Covid-19 Salgını / Pandemia de Covid-19", options: ["Covid-19 Salgını / Pandemia de Covid-19", "Atom Bombası", "Berlin Duvarı", "Titanik"] },
+  { emoji: "🚢🧊🎻", answer: "Titanik Kazası / Acidente do Titanic", options: ["Titanik Kazası / Acidente do Titanic", "Çernobil", "Covid", "Uzay Görevi"] },
+  { emoji: "🚀💥🌌", answer: "Challenger Felaketi / Desastre do Challenger", options: ["Challenger Felaketi / Desastre do Challenger", "Apollo 11", "Titanik", "Notre Dame Yangını"] },
+  { emoji: "🏙️✈️✈️", answer: "İkiz Kuleler Saldırısı / Ataques às Torres Gêmeas", options: ["İkiz Kuleler Saldırısı / Ataques às Torres Gêmeas", "Berlin Duvarı", "Fukushima", "Mars Görevi"] },
+  { emoji: "☢️💣🏯", answer: "Atom Bombası / Bomba Atômica", options: ["Atom Bombası / Bomba Atômica", "Çernobil", "Covid", "Japonya Depremi"] },
+  { emoji: "🔥🏛️🇫🇷", answer: "Notre Dame Yangını / Incêndio de Notre-Dame", options: ["Notre Dame Yangını / Incêndio de Notre-Dame", "Atom Patlaması", "Titanik", "Uzay Mekiği"] }
 ];
 
 function startGame() {
