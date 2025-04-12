@@ -1,8 +1,8 @@
 const questions = [
     { emoji: "🌕👨‍🚀🚀", answer: "Apollo 11 Görevi / Missão Apollo 11", options: ["Apollo 11 Görevi / Missão Apollo 11", "Covid-19 / Pandemia", "Berlin Duvarı / Muro de Berlim", "Titanik / Titanic"] },
     { emoji: "😷🔒💉", answer: "Covid-19 / Pandemia", options: ["Covid-19 / Pandemia", "Berlin Duvarı / Muro de Berlim", "Apollo 11 Görevi / Missão Apollo 11", "Çernobil / Chernobyl"] },
-    { emoji: "🧱🔨🎉", answer: "Berlin Duvarı’nın Yıkılışı / Queda do Muro de Berlim", options: ["Berlin Duvarı’nın Yıkılışı / Queda do Muro de Berlim", "Apollo 11 Görevi / Missão Apollo 11", "İkiz Kuleler / Torres Gêmeas", "Atom Bombası / Bomba Atômica"] },
-    { emoji: "🚢🧊🎻", answer: "Titanik / Titanic", options: ["Titanik / Titanic", "Çernobil / Chernobyl", "Covid-19 / Pandemia", "Fukushima / Fukushima"] },
+    { emoji: "🔨🎉", answer: "Berlin Duvarı’nın Yıkılışı / Queda do Muro de Berlim", options: ["Berlin Duvarı’nın Yıkılışı / Queda do Muro de Berlim", "Apollo 11 Görevi / Missão Apollo 11", "İkiz Kuleler / Torres Gêmeas", "Atom Bombası / Bomba Atômica"] },
+    { emoji: "🚢🎻", answer: "Titanik / Titanic", options: ["Titanik / Titanic", "Çernobil / Chernobyl", "Covid-19 / Pandemia", "Fukushima / Fukushima"] },
     { emoji: "🏭☢️💥", answer: "Çernobil / Chernobyl", options: ["Çernobil / Chernobyl", "Titanik / Titanic", "Ay'a İniş / Pouso na Lua", "Fukushima / Fukushima"] },
     { emoji: "🌊🏯☢️", answer: "Fukushima / Fukushima", options: ["Fukushima / Fukushima", "Çernobil / Chernobyl", "Covid-19 / Pandemia", "Apollo 11 / Apollo 11"] },
     { emoji: "🔥🏛️🇫🇷", answer: "Notre Dame / Notre Dame", options: ["Notre Dame / Notre Dame", "Titanik / Titanic", "İkiz Kuleler / Torres Gêmeas", "Ay'a İniş / Pouso na Lua"] },
