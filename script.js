@@ -1,25 +1,14 @@
 const questions = [
-    {
-      emoji: "🌕👨‍🚀🚀",
-      answer: "Apollo 11 Görevi / Missão Apollo 11",
-      options: [
-        "Apollo 11 Görevi / Missão Apollo 11",
-        "Covid-19 / Pandemia",
-        "Çernobil / Chernobyl",
-        "Titanik / Titanic"
-      ]
-    },
-    {
-      emoji: "😷🔒💉",
-      answer: "Covid-19 / Pandemia",
-      options: [
-        "Covid-19 / Pandemia",
-        "Berlin Duvarı / Muro de Berlim",
-        "Apollo 11 Görevi / Missão Apollo 11",
-        "Çernobil / Chernobyl"
-      ]
-    }
-    // ← Diğer soruları da buraya aynı formatta eklersin, toplam 10 tane olacak şekilde
+    { emoji: "🌕👨‍🚀🚀", answer: "Apollo 11 Görevi / Missão Apollo 11", options: ["Apollo 11 Görevi / Missão Apollo 11", "Covid-19 / Pandemia", "Berlin Duvarı / Muro de Berlim", "Titanik / Titanic"] },
+    { emoji: "😷🔒💉", answer: "Covid-19 / Pandemia", options: ["Covid-19 / Pandemia", "Berlin Duvarı / Muro de Berlim", "Apollo 11 Görevi / Missão Apollo 11", "Çernobil / Chernobyl"] },
+    { emoji: "🧱🔨🎉", answer: "Berlin Duvarı’nın Yıkılışı / Queda do Muro de Berlim", options: ["Berlin Duvarı’nın Yıkılışı / Queda do Muro de Berlim", "Apollo 11 Görevi / Missão Apollo 11", "İkiz Kuleler / Torres Gêmeas", "Atom Bombası / Bomba Atômica"] },
+    { emoji: "🚢🧊🎻", answer: "Titanik / Titanic", options: ["Titanik / Titanic", "Çernobil / Chernobyl", "Covid-19 / Pandemia", "Fukushima / Fukushima"] },
+    { emoji: "🏭☢️💥", answer: "Çernobil / Chernobyl", options: ["Çernobil / Chernobyl", "Titanik / Titanic", "Ay'a İniş / Pouso na Lua", "Fukushima / Fukushima"] },
+    { emoji: "🌊🏯☢️", answer: "Fukushima / Fukushima", options: ["Fukushima / Fukushima", "Çernobil / Chernobyl", "Covid-19 / Pandemia", "Apollo 11 / Apollo 11"] },
+    { emoji: "🔥🏛️🇫🇷", answer: "Notre Dame / Notre Dame", options: ["Notre Dame / Notre Dame", "Titanik / Titanic", "İkiz Kuleler / Torres Gêmeas", "Ay'a İniş / Pouso na Lua"] },
+    { emoji: "🏙️✈️✈️", answer: "İkiz Kuleler / Torres Gêmeas", options: ["İkiz Kuleler / Torres Gêmeas", "Berlin Duvarı / Muro de Berlim", "Fukushima / Fukushima", "Covid-19 / Pandemia"] },
+    { emoji: "☢️💣🏯", answer: "Atom Bombası / Bomba Atômica", options: ["Atom Bombası / Bomba Atômica", "Çernobil / Chernobyl", "Titanik / Titanic", "Japonya Depremi / Terremoto Japão"] },
+    { emoji: "🚀💥🌌", answer: "Challenger / Challenger", options: ["Challenger / Challenger", "Apollo 11 Görevi / Missão Apollo 11", "Mars Görevi / Missão Marte", "Notre Dame / Notre Dame"] }
   ];
   
   let current = 0;
@@ -69,11 +58,12 @@ const questions = [
     if (selected === correct) {
       score++;
       correctSound.play();
+      button.classList.add("bounce");
       document.getElementById('result').textContent = 'Doğru! ✅ / Correto! ✅';
     } else {
       wrongSound.play();
+      button.classList.add("shake");
       document.getElementById('result').textContent = `Yanlış ❌ Doğru cevap: ${correct} / Errado ❌ Resposta correta: ${correct}`;
-      button.classList.add('shake');
     }
   
     setTimeout(() => {
