@@ -1,90 +1,89 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #fefefe;
+    background-color: #fffaf5;
     color: #4a3b64;
     text-align: center;
-    padding: 2rem;
+    padding: 1.5rem;
   }
   
   h1 {
-    font-size: 2.8rem;
-    margin-bottom: 1.5rem;
-    font-weight: 700;
+    font-size: 2.5rem;
     color: #a14daf;
+    margin-bottom: 1.2rem;
+    font-weight: 700;
   }
   
-  .intro-box {
-    border: 2px solid #f4a261;
-    border-radius: 16px;
-    padding: 1.5rem;
-    margin: 1.5rem auto;
-    max-width: 700px;
-    background-color: #fffaf5;
-    font-size: 1.2rem;
-    color: #6b4c7c;
-  }
-  
-  .lang-info {
-    font-size: 0.9rem;
+  .language-toggle {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 10px;
+    right: 10px;
     background-color: #f4a261;
     color: white;
     padding: 0.4rem 0.8rem;
     border-radius: 8px;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+  
+  .intro-box {
+    background: #fff4e6;
+    border: 2px solid #f4a261;
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .nickname-box {
-    margin-top: 1rem;
+    margin: 1rem 0;
   }
   
-  .nickname-box input {
-    padding: 0.8rem;
+  input {
+    padding: 0.6rem;
     font-size: 1rem;
     border-radius: 8px;
     border: 1px solid #ccc;
-    width: 60%;
+    width: 80%;
     max-width: 300px;
   }
   
   button {
-    padding: 1rem 2.5rem;
-    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
     background-color: #f4a261;
-    color: #fff;
+    color: white;
     border: none;
-    border-radius: 20px;
+    border-radius: 12px;
+    margin-top: 1rem;
     cursor: pointer;
-    margin-top: 2rem;
+    font-weight: bold;
+    transition: background 0.3s ease;
   }
   
   button:hover {
     background-color: #e67e22;
   }
   
-  .choices-column {
+  .hidden {
+    display: none;
+  }
+  
+  .question {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .choices {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    max-width: 90%;
-    margin: 0 auto;
+    margin-bottom: 1rem;
   }
   
-  .choices-column button {
-    font-size: 1.3rem;
-    padding: 1rem;
-    background-color: #f4a261;
-    color: #fffaf5;
-    border: none;
-    border-radius: 12px;
-    transition: 0.3s;
-    font-weight: bold;
-  }
-  
-  .choices-column button:hover {
-    background-color: #e67e22;
-    transform: scale(1.02);
+  .choices button {
+    font-size: 1.2rem;
   }
   
   .correct {
@@ -95,21 +94,28 @@ body {
     background-color: #E74C3C !important;
   }
   
-  .result {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-top: 1rem;
+  .shake {
+    animation: shake 0.4s;
   }
   
   @keyframes shake {
     0% { transform: translateX(0); }
-    25% { transform: translateX(-4px); }
-    50% { transform: translateX(4px); }
-    75% { transform: translateX(-4px); }
+    25% { transform: translateX(-3px); }
+    50% { transform: translateX(3px); }
+    75% { transform: translateX(-2px); }
     100% { transform: translateX(0); }
   }
   
-  .shake {
-    animation: shake 0.4s;
+  #combo-message {
+    font-size: 2.5rem;
+    color: #a14daf;
+    margin-top: 2rem;
+    animation: fadeInOut 2s ease-in-out forwards;
+  }
+  
+  @keyframes fadeInOut {
+    0% { opacity: 0; transform: scale(0.8); }
+    50% { opacity: 1; transform: scale(1.2); }
+    100% { opacity: 0; transform: scale(0.8); }
   }
   
