@@ -4,12 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tramoji</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="language-toggle">🌐 TR / PT</div>
-
   <div id="start-screen">
     <h1>Tramoji</h1>
     <div class="intro-box">
@@ -23,18 +21,18 @@
   </div>
 
   <div id="quiz-screen" class="hidden">
-    <div class="question" id="question"></div>
+    <div class="emoji-display" id="question"></div>
     <div class="choices" id="choices"></div>
     <div class="result" id="result"></div>
   </div>
 
-  <div id="combo-message" class="hidden">🎉 KOMBO! 🎉</div>
-
   <div id="end-screen" class="hidden">
     <h2>Oyun Bitti! / Fim do Jogo!</h2>
     <p id="final-score"></p>
-    <h3>Bugünün Oyuncuları / Jogadores de Hoje</h3>
-    <ul id="player-stats"></ul>
+    <div id="daily-stats">
+      <h3>Bugünün Oyuncuları / Jogadores de Hoje</h3>
+      <ul id="player-stats"></ul>
+    </div>
     <button onclick="resetToStart()">Tekrar Oyna / Jogar Novamente</button>
   </div>
 
