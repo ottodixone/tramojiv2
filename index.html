@@ -2,15 +2,18 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tramoji</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
+  <div class="language-toggle">🌐 TR / PT</div>
+
   <div id="start-screen">
     <h1>Tramoji</h1>
     <div class="intro-box">
-      <p><span class="tr">📍 3 emojiyi incele ve hangi tarihi olayı temsil ettiğini seç.</span> / <span class="pt">Observe os 3 emojis e escolha o evento histórico correspondente.</span></p>
+      <p>📍 <span class="tr">3 emojiyi incele ve hangi tarihi olayı temsil ettiğini seç.</span> / <span class="pt">Observe os 3 emojis e escolha o evento histórico correspondente.</span></p>
     </div>
     <div class="nickname-box">
       <label for="nickname">Takma Ad / Apelido:</label>
@@ -21,22 +24,19 @@
 
   <div id="quiz-screen" class="hidden">
     <div class="question" id="question"></div>
-    <div class="choices-grid" id="choices"></div>
+    <div class="choices" id="choices"></div>
     <div class="result" id="result"></div>
   </div>
+
+  <div id="combo-message" class="hidden">🎉 KOMBO! 🎉</div>
 
   <div id="end-screen" class="hidden">
     <h2>Oyun Bitti! / Fim do Jogo!</h2>
     <p id="final-score"></p>
-    <div id="daily-stats">
-      <h3>Bugünün Oyuncuları / Jogadores de Hoje</h3>
-      <ul id="player-stats"></ul>
-    </div>
+    <h3>Bugünün Oyuncuları / Jogadores de Hoje</h3>
+    <ul id="player-stats"></ul>
     <button onclick="resetToStart()">Tekrar Oyna / Jogar Novamente</button>
   </div>
-
-  <audio id="correctSound" src="https://cdn.pixabay.com/audio/2021/08/04/audio_19bfe4dfab.mp3"></audio>
-  <audio id="wrongSound" src="https://cdn.pixabay.com/audio/2022/03/15/audio_4b5cb2ccf3.mp3"></audio>
 
   <script src="script.js"></script>
 </body>
